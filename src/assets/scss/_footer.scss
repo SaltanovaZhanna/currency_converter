@@ -1,0 +1,82 @@
+footer {
+  width: 100%;
+  min-height: 120px;
+  background-color: #03032c;
+  .footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+      width: 100px;
+      height: 100px;
+    }
+    div {
+      nav {
+        ul {
+          display: flex;
+          gap:20px;
+          margin-left: 30px;
+          li:nth-child(1) {
+            a {
+              svg {
+                &:hover {
+                  circle {
+                    fill: rgb(0, 56, 255);
+                    stroke: #012244;
+                  }
+
+                  path {
+                    fill: #0051fc;
+                    stroke: #0c4fdf;
+                  }
+
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+          li:nth-child(2) {
+            a {
+              svg {
+                &:hover {
+                  circle {
+                    fill: rgb(25, 69, 242);
+                    stroke: rgb(0, 183, 255);
+                  }
+                  path {
+                    fill: #00ACEE;
+                    stroke: #00ACEE;
+                  }
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+          li:nth-child(3){
+            a {
+              svg {
+                &:hover {
+                  circle {
+                    fill: rgb(178, 15, 196);
+                    stroke: #C13584;
+                  }
+                  path {
+                    stroke: #C13584;
+                  }
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    p {
+      font-size: 30px;
+      color: #9accd7;
+    }
+  }
+}
