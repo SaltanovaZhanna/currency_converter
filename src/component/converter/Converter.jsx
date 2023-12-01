@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import '../../assets/scss/style.scss';
 
-const Converter = () => {
+function Converter () {
     const [amountFrom, setAmountFrom] = useState(1);
     const [currencyFrom, setCurrencyFrom] = useState('UAH');
     const [amountTo, setAmountTo] = useState(null);
@@ -57,28 +57,28 @@ const Converter = () => {
                 <h2>Сurrency converter</h2>
                 <div>
                     <label>Amount:
-                    <input
-                        type="number"
-                        value={amountFrom}
-                        onChange={handleAmountFromChange}
-                    />
+                        <input
+                            type="number"
+                            value={amountFrom}
+                            onChange={handleAmountFromChange}
+                        />
                     </label>
                     <select
                         value={currencyFrom}
                         onChange={handleCurrencyFromChange}
                     >
-                            <option value="UAH">UAH</option>
-                            <option value="USD">USD</option>
-                            <option value="EUR">EUR</option>
+                        <option value="UAH">UAH</option>
+                        <option value="USD">USD</option>
+                        <option value="EUR">EUR</option>
                     </select>
                 </div>
                 <div>
                     <label>Converted:
-                    <input
-                        type="number"
-                        value={amountTo || ''}
-                        onChange={handleAmountToChange}
-                    />
+                        <input
+                            type="number"
+                            value={amountTo || ''}
+                            onChange={handleAmountToChange}
+                        />
                     </label>
                     <select
                         value={currencyTo}

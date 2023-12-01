@@ -9,6 +9,11 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media(max-width: 768px) {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap:20px;
+    }
     .logo {
       width: 100px;
       height: 100px;

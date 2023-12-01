@@ -9,6 +9,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media(max-width: 768px) {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap:20px;
+    }
     .logo {
       width: 100px;
       height: 100px;
@@ -40,6 +45,9 @@ header {
     .currency {
       width: 100%;
       max-width: 200px;
+      @media(max-width: 768px) {
+        margin-top: 20px;
+      }
       h2 {
         font-size: 20px;
         margin-bottom: 20px;
